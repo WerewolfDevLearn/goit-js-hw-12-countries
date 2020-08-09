@@ -8,7 +8,7 @@ function createMarkup(arrOfCountries) {
     return;
   } else if (arrOfCountries.length > 10) {
     baseInfo();
-  } else if (arrOfCountries.length <= 10) {
+  } else if (arrOfCountries.length <= 10 && arrOfCountries.length >= 2) {
     markup = countriesTpl(arrOfCountries);
     return markup;
   } else if (arrOfCountries.length < 2) {
